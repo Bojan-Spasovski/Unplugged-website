@@ -87,6 +87,97 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*----- header-footer ------*/
+
+header,
+footer {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*----- header-nav ------*/
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+head-divider, li {
+  padding: 15px;
+}
+
+
+
+
+/*-----hero-area-aside ------*/
+
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+img {
+  width: 100%;
+}
+
+/*-----main-section ------*/
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*-----reviews-section ------*/
+
+.reviews .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
