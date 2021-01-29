@@ -99,17 +99,34 @@ footer {
 
 /*----- header-nav ------*/
 
-ul {
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   list-style: none;
 }
 
-head-divider, li {
-  padding: 15px;
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+
 
 
 
@@ -166,7 +183,38 @@ img {
   flex-flow: row wrap;
 }
 
+/* ===================== About Page =======================*/
 
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
+/* ===================== FAQ Page =======================*/
+
+.mission .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 
 
