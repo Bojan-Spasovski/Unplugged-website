@@ -163,7 +163,7 @@ textarea {
 
   footer { 
     background-color: #202322;
-    background-color: #;
+    
   }
   
   /* -------------------- Base Header - Footer Styles -------------------- */
@@ -243,7 +243,12 @@ textarea {
   }
   
   footer .copyright {
-    margin: 20px 0;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
   }
   
   /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -276,6 +281,10 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url('../img/rawpixel-800820-unsplash1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .features h2 {
@@ -304,6 +313,8 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
+    
   }
   
   .reviews h2 {
@@ -312,11 +323,58 @@ textarea {
   
   .reviews h3 {
     width: 55%;
-    margin: 20px 0;
+    
   }
 
 /* ===================== About Page =======================*/
 
+.mission {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color:#527158;
+}
+
+.contact-section {
+  
+}
+
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+}
+ 
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+margin: 20px 0;
+font-size: 1.125em;
+font-weight: 400;
+}
+ 
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+ 
+ 
+address {
+  font-style: normal;
+}
+ 
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+
+
+footer { 
+  background-color: #202322;
+  
+}
 .mission {
   display: flex;
   justify-content: center;
@@ -329,11 +387,18 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+
 }
 
 .contact-content p {
   margin: 0;
 }
+
+.copyright {
+  width: 100%;
+}
+
 
 
 /* ===================== FAQ Page =======================*/
@@ -343,6 +408,7 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -483,7 +549,7 @@ input[type=button] {
 /* General styles */
 .content-wrapper {
   max-width: 640px;
-  margin:100px;
+ 
   
 }
 
@@ -553,31 +619,44 @@ input[type=button] {
 
 /* Reviews */
 
+.reviews {
+  display:  flex;
+  flex-flow: row wrap;
+}
+
 .reviews .content-wrapper {
-  flex-flow: row;
+  width: 100%;
   
 }
 
-
+.reviews h3 {
+  width: 85%;
+  margin-bottom: 40px;
+  margin-left: 0px;
+  line-height: 1;
+  font-size: 2.25em;
+  font-size: 1.5em;
+  line-height: 1.25;
+}
 .reviews article {
   display: flex;
   justify-content: space-between;
-  flex-flow: row;
 }
 
-.reviews article div {
+.reviews article .bottom-section-heading {
   width: 49%;
+  
 }
 
-.review-image {
-  width: 40%;
+.reviews figure {
+  width: 100%;
   margin: 20px;
 }
 
 /* Footer */
 footer .content-wrapper {
   width: 65%;
-  margin: 100px 0;
+  margin: 20px 0;
 }
 
 .footer-content {
@@ -725,6 +804,13 @@ footer .copyright {
      .mission h2,
      .contact-section .content-wrapper h2 {
          width: 95%;
+     }
+
+     .copyright {
+       width: 100%;
+       justify-content: center;
+       align-items: center;
+       
      }
 
       /* ==========================================================================
