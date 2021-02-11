@@ -138,6 +138,8 @@ textarea {
   }
    
   figure {
+
+
    
   }
    
@@ -252,6 +254,11 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url('../img/jake-melara-30679-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
   }
   
   /* Aside */
