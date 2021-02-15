@@ -191,6 +191,9 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125em;
   }
   
   header nav ul {
@@ -215,23 +218,38 @@ textarea {
   footer .content-wrapper {
     width: 55%;
     margin: 50px 0;
+    text-align: center;
+    
   }
   
   footer .contact {
     margin-bottom: 50px;
+    
   }
   
   footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
   }
   
   footer .social-icons p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
   }
+
+  .social-icons {
+  font-size: 1.6em;
+          margin-bottom: 20px;
+  }
+
+  
   
   footer .copyright {
     width: 100%;
@@ -255,6 +273,10 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     
+  }
+
+  main .content-wrapper {
+    margin: 100px 0;
   }
   
   /* Aside */
@@ -601,12 +623,11 @@ input[type=button] {
   }
 
   header nav {
-    width: 20%;
-  }
-
-  header nav ul {
-    justify-content: space-between;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  width: 60%;
   }
 
   .header-divider {
@@ -685,13 +706,27 @@ input[type=button] {
 /* Footer */
 footer .content-wrapper {
   width: 65%;
-  margin: 20px 0;
+  margin: 100px 0;
+ 
 }
 
-.footer-content {
+footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row wrap;
+}
+
+
+footer .social-icons {
+  width: 8em;
+  justify-content: space-between;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: center;
 }
 
 footer .contact {
@@ -703,6 +738,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
 }
+
 
 /* ==========================================================================
      About Page
@@ -786,6 +822,8 @@ footer .copyright {
       width: 66%;
       justify-content: space-between;
     }
+
+    
 
     aside .content-wrapper .form-description,
     aside .content-wrapper .form {
