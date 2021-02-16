@@ -176,12 +176,14 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    text-align: center;
     margin: 0;
   }
   
-  .header-divider {
-    width: 100%;
+  .head-divider {
+    background: #3a3a3a;
     height: 1px;
+    width: 100%;
     margin: 10px 0 20px 0;
   }
   
@@ -201,10 +203,13 @@ textarea {
     justify-content: space-around;
     width: 100%;
     list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
   img {
     width: 100%;
+    
   }
   
   footer {
@@ -228,10 +233,14 @@ textarea {
     
   }
   
+  
+  
+  
   footer .social-icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
     
   }
   
@@ -247,7 +256,7 @@ textarea {
 
   .social-icons {
     font-size: 1.6em;
-    margin-bottom: 20px;
+    
   }
 
   
@@ -269,6 +278,7 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    min-height: 500px;
     background: url('../img/jake-melara-30679-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -276,8 +286,16 @@ textarea {
     
   }
 
+  .hero-area h1 {
+    font-size: 2.25em;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    
+  }
+
   main .content-wrapper {
-    margin: 100px 0;
+    margin: 50px 0;
   }
   
   /* Aside */
@@ -359,7 +377,8 @@ textarea {
   }
   
   .reviews h3 {
-    width: 55%;
+    font-weight: 500;
+    font-size: 1.875em;
     
   }
 
@@ -472,16 +491,11 @@ footer {
   line-height: 1;
 }
 
-footer .footer-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
+
 
 footer .social-icons {
   justify-content: space-between;
-  width: 8em;
+  
   
 }
 
@@ -617,6 +631,8 @@ input[type=button] {
 
 }
 
+
+
   /* Header */
   header {
     justify-content: space-around;
@@ -627,7 +643,8 @@ input[type=button] {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
-    flex-flow: row;
+    flex-flow: nowrap;
+    text-align: left;
   }
 
   header img {
@@ -635,19 +652,27 @@ input[type=button] {
   }
 
   header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-  width: 60%;
+   width: 30%;
   }
 
-  .header-divider {
+  header nav ul {
+    justify-content: space-between;
+  }
+
+  .head-divider {
     display: none;
   }
 
   /* Hero Area */
+  .hero-area {
+    min-height: 600px;
+  }  
 
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+}
    /* Aside */
 
    aside .content-wrapper {
@@ -692,12 +717,12 @@ input[type=button] {
 }
 
 .reviews h3 {
-  width: 85%;
+  width: 100%;
   margin-bottom: 40px;
   margin-left: 0px;
   line-height: 1;
   font-size: 2.25em;
-  font-size: 1.5em;
+  
   line-height: 1.25;
 }
 .reviews article {
@@ -810,6 +835,8 @@ footer .footer-content {
      
   
      .faq .content-wrapper {
+       display: flex;
+       flex-flow: row wrap;
       justify-content: space-between;
     }
   
@@ -875,8 +902,7 @@ footer .footer-content {
   .content-wrapper h3 {
     width: 100%;
     font-size: 2em;
-    margin-bottom: 55px;
-    margin-left: 18px;
+    
  }
 
  .bottom-section-heading h4 {
@@ -897,15 +923,25 @@ footer .footer-content {
      .mission h2,
      .contact-section .content-wrapper h2 {
          width: 95%;
+         width: 95%;
+         font-size: 3em;
      }
 
+     footer .footer-content {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
      .copyright {
        width: 100%;
        justify-content: center;
        align-items: center;
        
      }
-
+     p {
+     font-size: 1.125em;
+    line-height: 1.333;
+     }
       /* ==========================================================================
   FAQ Page
   ========================================================================== */
